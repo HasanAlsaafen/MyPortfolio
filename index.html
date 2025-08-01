@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasan Al-Saafin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a
+        href="https://www.linkedin.com/in/hasan-saafen-9ba5902b5"
+        class="headerlink"
+      >
+        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://github.com/HasanAlsaafen" class="headerlink">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+      </a>
+      <div class="v-divider" role="separator"></div>
+      <div aria-label="Contact Information">
+        <a href="mailto:hasansaafen1234@gmail.com" class="headerlink">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        </a>
+        <span>hasansaafen1234@gmail.com</span>
+      </div>
+      <div class="v-divider"></div>
+      <div aria-label="Phone Number">
+        <a href="tel:+972568973379" class="headerlink">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        </a>
+        <span>+972568973379</span>
+      </div>
+    </header>
+    <div class="h-divider" role="separator"></div>
+    <nav>
+      <h1><a href="#top" class="logo">Hasan Al-Saafen</a></h1>
+      <div class="nav-divider" role="separator"></div>
+      <ul>
+        <li><a class="navlink" href="#about">About</a></li>
+        <li><a class="navlink" href="#projects">Projects</a></li>
+        <li><a class="navlink" href="#certificates">Certificates</a></li>
+        <li><a class="navlink" href="#contact">Contact</a></li>
+      </ul>
+      <div
+        class="collapse-icon"
+        role="button"
+        aria-label="Toggle Navigation"
+        tabindex="0"
+      >
+        <i class="fa-solid fa-bars" id="collapse"></i>
+      </div>
+    </nav>
+    <main>
+      <h2 class="section-title" id="about">About Me</h2>
+      <section class="about-section" aria-labelledby="about">
+        <p class="about-text" tabindex="0">
+          Hello! I’m Hasan Al-Saafen, a fourth-year Computer Science student at
+          Palestine Polytechnic University (PPU) with a strong passion for
+          front-end development. I specialize in building responsive,
+          user-centered web interfaces using modern tools like React, Tailwind
+          CSS, and Redux. I also have a solid foundation in back-end
+          development, including Node.js, Express, and RESTful APIs. Over the
+          past few months, I’ve completed multiple professional certifications
+          from IBM and Coursera in areas such as cloud computing, DevOps, and
+          full-stack web development. My goal is to create clean, accessible,
+          and performance-optimized web experiences that blend design and
+          functionality seamlessly. Currently, I’m working on a smart
+          educational platform for my graduation project, and I’m actively
+          involved in Agile-based team projects that integrate real-world
+          software development practices.
+        </p>
+        <div class="outer-circle">
+          <div class="inner-circle">
+            <img class="profile-image" src="F.S.png" alt="Hasan Al-Saafen" />
+          </div>
+        </div>
+        <a href="CV.pdf" class="download-link" download="Hasan's CV"
+          >Download CV <i class="fa-solid fa-download"></i
+        ></a>
+      </section>
+      <h2 class="section-title" id="projects">Projects</h2>
+      <section class="projects-section" aria-labelledby="projects">
+        <article class="project-card">
+          <img
+            src="image-container.avif"
+            alt="Image-container"
+            class="image-container"
+          />
+          <div class="project">
+            <h3 id="cocktail-project">Cocktail maker project</h3>
+            <p class="project-descrition" aria-labelledby="cocktail-project">
+              This project was the final assignment for the Object-Oriented
+              Programming course. It was a collaborative effort that focused on
+              applying core OOP principles using Java. Throughout the project,
+              we implemented concepts such as encapsulation, inheritance, and
+              polymorphism. In the final phase, we designed the graphical user
+              interface (GUI) using NetBeans' drag-and-drop tools to create a
+              functional and user-friendly application.
+            </p>
+            <div class="tech tech-java">Java</div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+  <script>
+    const collapse = document.getElementById("collapse");
+    const nav = document.querySelector("nav ul");
+    if (window.innerWidth <= 820) {
+      nav.style.display = "none";
+    }
+    collapse.addEventListener("click", () => {
+      collapse.classList.toggle("fa-xmark");
+      if (nav.style.display === "none" || nav.style.display === "") {
+        nav.style.display = "flex";
+        nav.style.position = "relative";
+        nav.style.top = "1em";
+        nav.style.left = "0";
+      } else {
+        nav.style.display = "none";
+      }
+    });
+  </script>
+</html>
