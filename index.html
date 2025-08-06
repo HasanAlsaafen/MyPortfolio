@@ -69,22 +69,20 @@
     <main>
       <h2 class="section-title" id="about">About Me</h2>
       <section class="about-section" aria-labelledby="about">
-        <p class="about-text" tabindex="0">
-          Hello! I’m Hasan Al-Saafen, a fourth-year Computer Science student at
-          Palestine Polytechnic University (PPU) with a strong passion for
-          front-end development. I specialize in building responsive,
-          user-centered web interfaces using modern tools like React, Tailwind
-          CSS, and Redux. I also have a solid foundation in back-end
-          development, including Node.js, Express, and RESTful APIs. Over the
-          past few months, I’ve completed multiple professional certifications
-          from IBM and Coursera in areas such as cloud computing, DevOps, and
-          full-stack web development. My goal is to create clean, accessible,
-          and performance-optimized web experiences that blend design and
-          functionality seamlessly. Currently, I’m working on a smart
-          educational platform for my graduation project, and I’m actively
-          involved in Agile-based team projects that integrate real-world
-          software development practices.
-        </p>
+        <div class="about-text" tabindex="0">
+          <p>
+            Front-end developer and Computer Science student at PPU with
+            hands-on experience in building responsive web interfaces using
+            React, Tailwind CSS, and Redux. Also skilled in back-end development
+            with Node.js, Express, and RESTful APIs. Certified by IBM and
+            Coursera in cloud computing, DevOps, and full-stack development.
+            Currently developing a smart educational platform and working on
+            Agile-based team projects.
+          </p>
+          <a href="CV.pdf" class="download-link" download="Hasan's CV"
+            >Download CV <i class="fa-solid fa-download"></i
+          ></a>
+        </div>
         <div class="outer-circle">
           <div class="inner-circle">
             <img
@@ -94,55 +92,9 @@
             />
           </div>
         </div>
-        <a href="CV.pdf" class="download-link" download="Hasan's CV"
-          >Download CV <i class="fa-solid fa-download"></i
-        ></a>
       </section>
       <h2 class="section-title" id="projects">Projects</h2>
       <section class="projects-section" aria-labelledby="projects">
-        <article class="project-card">
-          <div class="project-image-side">
-            <img
-              src="./assets/images/image-container.avif"
-              alt="Decorative background for the project image"
-              class="image-container"
-            />
-            <a
-              href="./assets/images/Java.png"
-              target="_JavaProject"
-              title="Tap to see"
-            >
-              <img
-                src="./assets/images/Java.png"
-                alt="This is a snap from the main in my java project"
-                class="project-image"
-              />
-            </a>
-          </div>
-
-          <div class="project">
-            <h3 id="cocktail-project">Cocktail maker project</h3>
-            <p class="project-descrition" aria-labelledby="cocktail-project">
-              This project was the final assignment for the Object-Oriented
-              Programming course. It was a collaborative effort that focused on
-              applying core OOP principles using Java. Throughout the project,
-              we implemented concepts such as encapsulation, inheritance, and
-              polymorphism. In the final phase, we designed the graphical user
-              interface (GUI) using NetBeans' drag-and-drop tools to create a
-              functional and user-friendly application.
-            </p>
-            <div class="tech tech-java">Java</div>
-            <div class="tap-to-see">
-              <a
-                href="https://github.com/HasanAlsaafen/JavaProject-cocktail-"
-                target="_blank"
-              >
-                View on GitHub
-                <i aria-hidden="true" class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </article>
         <!--Another one -->
         <article class="project-card">
           <div class="project-image-side">
@@ -247,6 +199,49 @@
             </div>
           </div>
         </article>
+        <article class="project-card">
+          <div class="project-image-side">
+            <img
+              src="./assets/images/image-container.avif"
+              alt="Decorative background for the project image"
+              class="image-container"
+            />
+            <a
+              href="./assets/images/Java.png"
+              target="_JavaProject"
+              title="Tap to see"
+            >
+              <img
+                src="./assets/images/Java.png"
+                alt="This is a snap from the main in my java project"
+                class="project-image"
+              />
+            </a>
+          </div>
+
+          <div class="project">
+            <h3 id="cocktail-project">Cocktail maker project</h3>
+            <p class="project-descrition" aria-labelledby="cocktail-project">
+              This project was the final assignment for the Object-Oriented
+              Programming course. It was a collaborative effort that focused on
+              applying core OOP principles using Java. Throughout the project,
+              we implemented concepts such as encapsulation, inheritance, and
+              polymorphism. In the final phase, we designed the graphical user
+              interface (GUI) using NetBeans' drag-and-drop tools to create a
+              functional and user-friendly application.
+            </p>
+            <div class="tech tech-java">Java</div>
+            <div class="tap-to-see">
+              <a
+                href="https://github.com/HasanAlsaafen/JavaProject-cocktail-"
+                target="_blank"
+              >
+                View on GitHub
+                <i aria-hidden="true" class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
         <div class="see-more-github">
           <a href="https://github.com/HasanAlsaafen">
             See more on My GitHub &nbsp;<i class="fa-brands fa-github"></i>
@@ -263,10 +258,9 @@
             />
             <figcaption>
               <h3>Get Started with Cloud Native, DevOps, Agile, and NoSQL</h3>
-              I explored cloud-native concepts, DevOps culture, and Agile
-              practices using tools like Zenhub. I implemented CI/CD workflows
-              and used MongoDB to perform CRUD operations and manage data
-              effectively.
+              Learned cloud-native, DevOps, and Agile with Zenhub. Built CI/CD
+              pipelines and managed data using MongoDB CRUD.
+
               <div class="tap-to-see">
                 <a
                   href="https://www.coursera.org/account/accomplishments/verify/VNFS11T4UKJ6?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
@@ -288,10 +282,9 @@
             <figcaption>
               <h3>Advanced React</h3>
               <p>
-                Building reusable React components using advanced patterns,
-                integrating APIs for data handling, testing components with
-                React Testing Library, and utilizing popular libraries to
-                streamline development.
+                Built reusable React components with advanced patterns,
+                integrated APIs, tested with React Testing Library, and used
+                popular libraries to streamline development.
               </p>
               <div class="tap-to-see">
                 <a
@@ -311,8 +304,8 @@
 
 "
           >
-            I share <strong>almost all </strong> my certificates on my linkedin
-            &nbsp; <i class="fa-brands fa-linkedin"></i
+            I share my certificates on my linkedin &nbsp;
+            <i class="fa-brands fa-linkedin"></i
           ></a>
         </div>
       </section>

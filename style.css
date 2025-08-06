@@ -167,11 +167,17 @@ nav ul {
   grid-column: 1 / 3;
   font-size: 1.2em;
   line-height: 1.6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   font-weight: 400;
   color: var(--text-color);
   padding: 16px;
   background-color: var(--secondary-color);
   border-radius: 8px;
+}
+
+.about-text p {
+  grid-column: 1/-1;
 }
 .outer-circle {
   background-color: var(--primary-color);
@@ -225,27 +231,28 @@ main {
 }
 .download-link {
   display: inline-block;
-  margin-top: 16px;
   padding: 8px 16px;
+
   background-color: rgb(30, 106, 182);
   color: var(--secondary-color);
   text-decoration: none;
   border-radius: 64px;
   width: max-content;
   height: min-content;
-
+  grid-column: 2/3;
   font-weight: bold;
   text-align: center;
-  justify-self: end;
-  grid-column: 2/3;
+  justify-self: center;
   margin: 0 auto;
+  align-self: center;
 }
 @media (max-width: 1000px) {
   .about-section {
     grid-template-columns: 1fr;
   }
   .download-link {
-    grid-column: 1;
+    grid-column: 2;
+    margin-top: 0.2em;
   }
   .about-text {
     grid-column: 1 / -1;
@@ -344,7 +351,8 @@ main {
   padding: 0.5em 1em;
 }
 .tech-java {
-  background: rgba(224, 131, 17, 0.5);
+  background: #007396;
+  color: #fff;
 }
 .tap-to-see {
   grid-column: 2;
@@ -377,32 +385,39 @@ main {
   color: inherit;
 }
 .tech-react {
-  background-color: rgba(0, 76, 110, 0.5);
+  background-color: #61dafb;
+  color: #0a0a0a;
 }
 .tech-firebase {
-  background-color: rgba(225, 33, 16, 0.5);
+  background-color: #ffca28;
+  color: #000;
 }
 .tech-seo {
   background-color: rgba(57, 228, 19, 0.5);
 }
 
 .tech-javascript {
-  background-color: rgba(221, 240, 12, 0.5);
+  background-color: #f7df1e;
+  color: #000;
 }
 .tech-php {
-  background-color: rgba(61, 60, 59, 0.5);
+  background-color: #777bb4;
+  color: #fff;
 }
 .tech-html {
-  background-color: rgba(10, 161, 68, 0.5);
+  background-color: #e44d26;
+  color: #fff;
 }
 .tech-css {
   background-color: rgba(18, 14, 156, 0.5);
 }
 .tech-bootstrab {
-  background-color: rgba(98, 14, 215, 0.5);
+  background-color: #7952b3;
+  color: #fff;
 }
 .tech-mysql {
-  background-color: rgba(231, 21, 192, 0.5);
+  background-color: #00758f;
+  color: #fff;
 }
 .see-more-github {
   display: flex;
@@ -487,7 +502,8 @@ main {
 .linkedin {
   align-self: center;
   margin: 1em auto;
-  background-color: #007ab9;
+  background-color: #0a66c2;
+
   color: #fff;
   padding: 1em;
   border-radius: 2em;
@@ -673,18 +689,37 @@ footer {
 }
 
 .footer-credits {
-  display: flex;
-  justify-content: flex-start;
-  width: fit-content;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin-left: 1em;
-  gap: 2em;
+  gap: 4em;
+  width: 100%;
+  justify-self: self-start;
+}
+.footer-description {
+  grid-column: 2/4;
+}
+.footer-contact {
+  grid-column: 4/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
 @media (max-width: 600px) {
   .footer-credits {
+    gap: 1em;
+  }
+  .footer-description {
     flex-direction: column;
-    align-items: center;
+    grid-column: 1/-1;
+    align-items: start;
   }
   .footer-contact {
+    grid-column: 1/-1;
+    margin-top: 0;
     align-self: flex-start;
   }
 }
